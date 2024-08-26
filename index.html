@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking output css  -->
+    <link rel="stylesheet" href="./asset/css/output.css">
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Medium Clone</title>
+</head>
+
+<body>
+    <!-- navbar starts here    -->
+    <div
+        class="flex items-center w-full h-5 justify-center m-3 md:m-0 gap-1 hover:cursor-pointer text-gray-400 md:hidden ">
+        <a href="#">Open in app</a>
+        <i class="fa-solid fa-arrow-up-long rotate-6 opacity-85"></i>
+    </div>
+    <!-- line for smal screen -->
+    <div class="border-[1px] border-gray-100 md:hidden">
+
+    </div>
+    <!-- actual navbar -->
+    <section id="#navbar">
+        <nav class="flex items-center justify-between">
+
+            <!-- branding  -->
+            <div class="flex items-center justify-between">
+                <span class="font-primary font-bold text-3xl px-5">Medium</span>
+                <div class=" hidden md:flex items-center  gap-3  md:px-5 text-gray-700">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <span class="">Search</span>
+                </div>
+
+
+            </div>
+
+            <!-- nav items -->
+            <div class="h-auto p-2">
+                <div class="flex items-center justify-around p-[10px] gap-7 ">
+                    <div>
+                        <div class="md:hidden flex">
+                            <i class="fa-solid fa-magnifying-glass text-2xl hover:cursor-pointer "></i>
+                        </div>
+                        <div class="hidden  md:flex gap-1 items-center hover: cursor-pointer ">
+                            <i class="fa-solid fa-pen-to-square text-xl"></i>
+                            <span class="text-sm text-gray-700">Write</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-bell text-2xl hover:cursor-pointer"></i>
+                    <img class="w-10 h-10 rounded-full hover:cursor-pointer" src="./asset/images/linkedln.jfif" alt="">
+                </div>
+            </div>
+
+
+        </nav>
+        <!-- line in small screen  -->
+        <div class=" block border-[1px] border-slate-100  my-1">
+
+        </div>
+    </section>
+    <!-- navbar ends here  -->
+    <section class="p-[20px]">
+        <!-- 2 division if in smaller screen then one div other will be hidden  -->
+
+        <div class="grid grid-cols-1 max-w-[90%] lg:grid-cols-[70%_auto] lg:mx-auto" id="sidebar">
+            <!-- for header  -->
+            <div id="left-sidebar">
+                <div
+                    class="flex flex-row  items-center justify-between gap-5 overflow-x-scroll no-scrollbar text-nowrap text-slate-500 mb-2">
+                    <i class="fa-solid fa-plus hover:text-black cursor-pointer"></i>
+                    <p class="text-black cursor-pointer border-b-2 border-black">For You</p>
+                    <p class="hover:text-black cursor-pointer">Following</p>
+                    <p class="hover:text-black cursor-pointer">Python</p>
+                    <p class="hover:text-black cursor-pointer">Machine Learning</p>
+                    <p class="hover:text-black cursor-pointer">Generaive AI</p>
+                    <p class="hover:text-black cursor-pointer">Computer Vision</p>
+
+                </div>
+                <div class=" border-[1px] border-gray-100">
+                </div>
+                <!-- contents here -->
+                <div class="m-4">
+                    <!-- item 1 -->
+                    <div class="grid grid-cols-[60%_auto] m-2 items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 cursor-pointer">
+                                <img class="h-8 w-8 rounded-full " src="./asset/images/user1.jpg" alt="">
+                                <p class="text-[12px]">Author1</p>
+                            </div>
+                            <div>
+                                <h2 class="text-md lg:text-lg font-bold "> Most Developer Failed with this Senior-Level Python
+                                    Interview Question</h2>
+                                <p class="text-slate-600">What is the difference between [0]*3 and [0,0,0]?...</p>
+                            </div>
+                            <div class="flex items-center justify-between max-w-[200px] w-full">
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-star text-orange-500"></i>
+                                    <p>Aug 8</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-hands-clapping"></i>
+                                    <p>1.99K</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p>1.2K</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img  class="cursor-pointer lg:max-w-[90%] lg:h-auto lg:w-[250px]" src="./asset/images/developer.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="grid grid-cols-[60%_auto] m-2 items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 cursor-pointer">
+                                <img class="h-8 w-8 rounded-full " src="./asset/images/user2.jpg" alt="">
+                                <p class="text-[12px]">Author2</p>
+                            </div>
+                            <div>
+                                <h2 class="text-md lg:text-lg font-bold "> LLM Architecture Explained!</h2>
+                                <p class="text-slate-600">Deep dive into the architecture and build real world application...</p>
+                            </div>
+                            <div class="flex items-center justify-between max-w-[200px] w-full">
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-star text-orange-500"></i>
+                                    <p>Aug 12</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-hands-clapping"></i>
+                                    <p>1.2K</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="cursor-pointer lg:max-w-[90%] lg:h-auto lg:w-[250px]" src="./asset/images/llm.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="grid grid-cols-[60%_auto] m-2 items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 cursor-pointer">
+                                <img class="h-8 w-8 rounded-full " src="./asset/images/user3.jpg" alt="">
+                                <p class="text-[12px]">Author3</p>
+                            </div>
+                            <div>
+                                <h2 class="text-md lg:text-lg font-bold "> How I Cracked the Machine Learning Interview? Practical Tips</h2>
+                                <p class="text-slate-600">Practical tips for interview preparation...</p>
+                            </div>
+                            <div class="flex items-center justify-between max-w-[200px] w-full">
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-star text-orange-500"></i>
+                                    <p>Aug 1</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-hands-clapping"></i>
+                                    <p>2.99K</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p>1.01K</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="cursor-pointer lg:max-w-[90%] lg:h-auto lg:w-[250px]" src="./asset/images/interview.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- item 1 -->
+                    <div class="grid grid-cols-[60%_auto] m-2 items-center justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 cursor-pointer">
+                                <img class="h-8 w-8 rounded-full " src="./asset/images/user1.jpg" alt="">
+                                <p class="text-[12px]">Author4</p>
+                            </div>
+                            <div>
+                                <h2 class=" text-md lg:text-lg font-bold "> The Math Behind Convolutional Neural Network??</h2>
+                                <p class="text-slate-600">Dive into CNN the backbone of Computer vision...</p>
+                            </div>
+                            <div class="flex items-center justify-between max-w-[200px] w-full">
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-star text-orange-500"></i>
+                                    <p>July 12</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-solid fa-hands-clapping"></i>
+                                    <p>10K</p>
+                                </div>
+                                <div class="cursor-pointer">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <p>4.5K</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="cursor-pointer lg:max-w-[90%] lg:h-auto lg:w-[250px]" src="./asset/images/math.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:grid grid-cols-1 mx-auto px-6 items-center" id="right-sidebar">
+                <!-- <div class="border-x-[1px] border-slate-400 h-full"> 
+            </div> -->
+                <!-- staff pick  3-->
+                <!-- <h1 class="text-xl font-bold font-primary text-center ">Staff Picks</h1> -->
+                <div class=" flex-row p-3 mx-2 " id="staffs">
+                    <h2 class="text-md xl:text-xl font-bold  font-primary text-start mx-2">Staff Picks</h2>
+                    <!-- staff 1 -->
+                    <div class="flex-row">
+                        <div class="flex items-center  gap-1 xl:gap-2 xl:m-2 m-1">
+                            <img class="w-8 h-8 rounded-full cursor-pointer" src="./asset/images/user2.jpg" alt="">
+                            <p class="cursor-pointer">Staff1</p>
+                            <p>in</p>
+                            <p class="cursor-pointer text-[10px] xl:text-sm">Towards LLM</p>
+                        </div>
+                        <h2 class=" text-md xl:text-lg font-bold m-2">When I'm Returning From Old School</h2>
+                    </div>
+                    <!-- staff 2 -->
+                    <div class="flex-row">
+                        <div class="flex items-center gap-1 xl:gap-2 xl:m-2 m-1">
+                            <img class="w-8 h-8 rounded-full cursor-pointer" src="./asset/images/user1.jpg" alt="">
+                            <p class="cursor-pointer">Staff2</p>
+                            <p>in</p>
+                            <p class="cursor-pointer text-[10px] xl:text-sm">AI Lab</p>
+                        </div>
+                        <h2 class="text-md xl:text-lg font-bold m-2 cursor-pointer">When I'm Returning From Old School</h2>
+                    </div>
+                    <!-- staff 3 -->
+                    <div class="flex-row">
+                        <div class="flex items-center gap-1 xl:gap-2 xl:m-2 m-1">
+                            <img class="w-8 h-8 rounded-full cursor-pointer" src="./asset/images/user4.jpg" alt="">
+                            <p class="cursor-pointer">Staff3</p>
+                            <p>in</p>
+                            <p class="cursor-pointer text-[10px] xl:text-sm">Generative AI</p>
+                        </div>
+                        <h2 class=" text-md xl:text-lg font-bold m-2 cursor-pointer">When I'm Returning From Old School</h2>
+                    </div>
+                    <p class="text-green-600 m-2 cursor-pointer">See the full list</p>
+                </div>
+
+                <!-- recommended topics -->
+                <div class="m-2 p-[10px] flex-row">
+                    <h2 class=" text-md xl:text-xl  font-bold mb-3  font-primary text-start">Recomended Topics</h2>
+                    <div class="flex flex-wrap gap-1 lg:gap-2">
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">AI</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Machine Learning</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Data Science</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Computer Architecture
+                        </p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Graphic Design</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Deep Learning</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">LLM</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Gen AI</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md lg:p-1">Natural Language
+                            Processing</p>
+                        <p class="cursor-pointer bg-slate-200 hover:bg-slate-300 rounded-md p-3">Python</p>
+                    </div>
+                    <p class="text-green-600 m-2 cursor-pointer">See the full list</p>
+                </div>
+
+                <!-- who to follow  -->
+                <div class="m-2 p-[10px] flex-row xl:max-w-[400px] xl:gap-5 group">
+                    <h2 class="text-md xl:text-xl font-bold mb-3  font-primary text-start">Who to Follow</h2>
+                    <!-- follow 1 -->
+                    <div class="flex justify-between group-hover:cursor-pointer mb-5">
+                        <div class="flex gap-3">
+                            <img class="h-10 w-10 rounded-full" src="./asset/images/user1.jpg" alt="">
+                            <div class="flex-row">
+                                <p class="text-md xl:text-xl font-bold font-mono">Name1</p>
+                                <p>Lorem ipsum dolor sit amet c..</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="rounded-xl border-[1px] border-slate-400 hover:border-slate-700 p-[8px]">Follow</button>
+                        </div>
+                    </div>
+                    <!-- follow 2 -->
+                    <div class="flex justify-between group-hover:cursor-pointer mb-5">
+                        <div class="flex gap-3">
+                            <img class="h-10 w-10 rounded-full" src="./asset/images/user4.jpg" alt="">
+                            <div class="flex-row">
+                                <p class="text-md xl:text-xl font-bold font-mono">Name2</p>
+                                <p>Lorem ipsum dolor sit amet c..</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="rounded-xl border-[1px] border-slate-400 hover:border-slate-700 p-[8px]">Follow</button>
+                        </div>
+                    </div>
+                    <!-- follow 3 -->
+                    <div class="flex justify-between group-hover:cursor-pointer mb-5">
+                        <div class="flex gap-3">
+                            <img class="h-10 w-10 rounded-full" src="./asset/images/user2.jpg" alt="">
+                            <div class="flex-row">
+                                <p class="text-md xl:text-xl font-bold font-mono">Name3</p>
+                                <p>Lorem ipsum dolor sit amet c..</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="rounded-xl border-[1px] border-slate-400 hover:border-slate-700 p-[8px]">Follow</button>
+                        </div>
+                    </div>
+                    <p class="text-green-600 m-2 cursor-pointer">See more suggestions</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <footer class="w-full text-center">
+            Created by Debopam(Pritam)
+        </footer>
+    </section>
+</body>
+
+</html>
